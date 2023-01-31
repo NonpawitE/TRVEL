@@ -11,7 +11,7 @@ import SwiftUI
 struct TRVELApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapView()
         }
     }
 }

@@ -11,6 +11,9 @@
 		CD81B4162981138D00858085 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81B4152981138D00858085 /* ContentView.swift */; };
 		CD81B4182981139000858085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD81B4172981139000858085 /* Assets.xcassets */; };
 		CD81B41B2981139000858085 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD81B41A2981139000858085 /* Preview Assets.xcassets */; };
+		CD81B422298115C300858085 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81B421298115C300858085 /* MapView.swift */; };
+		CD81B4262982532B00858085 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81B4252982532B00858085 /* KeyboardHandler.swift */; };
+		CD81B42A298264FB00858085 /* DestinationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81B429298264FB00858085 /* DestinationTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		CD81B4152981138D00858085 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD81B4172981139000858085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD81B41A2981139000858085 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD81B421298115C300858085 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CD81B4252982532B00858085 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		CD81B4272982586200858085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CD81B429298264FB00858085 /* DestinationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,11 @@
 		CD81B4122981138D00858085 /* TRVEL */ = {
 			isa = PBXGroup;
 			children = (
+				CD81B428298264D800858085 /* Map View */,
+				CD81B4272982586200858085 /* Info.plist */,
 				CD81B4132981138D00858085 /* TRVELApp.swift */,
 				CD81B4152981138D00858085 /* ContentView.swift */,
+				CD81B4252982532B00858085 /* KeyboardHandler.swift */,
 				CD81B4172981139000858085 /* Assets.xcassets */,
 				CD81B4192981139000858085 /* Preview Content */,
 			);
@@ -65,6 +75,15 @@
 				CD81B41A2981139000858085 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD81B428298264D800858085 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				CD81B421298115C300858085 /* MapView.swift */,
+				CD81B429298264FB00858085 /* DestinationTextField.swift */,
+			);
+			path = "Map View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD81B4162981138D00858085 /* ContentView.swift in Sources */,
+				CD81B42A298264FB00858085 /* DestinationTextField.swift in Sources */,
+				CD81B422298115C300858085 /* MapView.swift in Sources */,
 				CD81B4142981138D00858085 /* TRVELApp.swift in Sources */,
+				CD81B4262982532B00858085 /* KeyboardHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +292,7 @@
 				DEVELOPMENT_TEAM = 77Q2W5XULP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TRVEL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +321,7 @@
 				DEVELOPMENT_TEAM = 77Q2W5XULP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TRVEL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
